@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="241.0" prefWidth="607.0" GridPane.columnIndex="1">
+         <children>
+            <Button fx:id="convertB" layoutX="264.0" layoutY="191.0" mnemonicParsing="false" onAction="#convert" prefHeight="36.0" prefWidth="78.0" text="Convert" />
+            <Button fx:id="chooseFileB" layoutX="506.0" layoutY="80.0" mnemonicParsing="false" onAction="#chooseFile" prefHeight="26.0" prefWidth="78.0" text="Load File" />
+            <Button fx:id="saveFileB" layoutX="506.0" layoutY="134.0" mnemonicParsing="false" onAction="#saveFile" prefHeight="26.0" prefWidth="78.0" text="Save File " />
+            <TextField fx:id="chooseFileTF" layoutX="14.0" layoutY="80.0" prefHeight="26.0" prefWidth="467.0" />
+            <TextField fx:id="saveFileTF" layoutX="14.0" layoutY="134.0" prefHeight="26.0" prefWidth="467.0" />
+            <Label fx:id="fileConverterL" layoutX="206.0" layoutY="14.0" prefHeight="32.0" prefWidth="194.0" text="FILE CONVERTER">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
